@@ -1,0 +1,251 @@
+@font-face {
+    src: url("/fonts/SFCompac.ttf");
+    font-family: sfcompact;
+}
+
+body {
+    font-size: 18px;
+    font-family: sfcompact !important;
+}
+
+.main-container {
+    width: 320px;
+}
+
+.table-container {
+    width: 90%;
+    margin: auto;
+}
+
+@media only screen and (min-width: 768px) {
+    h1 {
+        font-size: 44px;
+    }
+    span {
+        font-size: 28px;
+    }
+    .table-container {
+        width: 95%;
+        max-width: 1018px;
+    }
+}
+
+.bg-image {
+    background-image: url("/images/background.png");
+    background-size: cover;
+    background-position: center center;
+}
+
+.vh-100 {
+    height: 100vh;
+}
+
+.text-green {
+    color: #0f6048;
+}
+
+.arrow-right {
+    position: absolute;
+    right: 60px;
+}
+
+.text-light-green {
+    color: #58af9b;
+}
+
+input,
+select {
+    background-color: #e1f8f6 !important;
+    border: 0 !important;
+    font-size: 18px !important;
+    height: 54px !important;
+}
+
+.btn-accent {
+    background: linear-gradient(5.02deg, #179570 3.68%, #58af9b 96.32%), #148653;
+    border-radius: 25rem;
+    height: 54px;
+}
+
+/* remove the original arrow */
+select.input-lg {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -o-appearance: none;
+    /* no standardized syntax available, no ie-friendly solution available */
+}
+
+select + i.fa,
+.date-input + i.fa {
+    color: #57af9b !important;
+    float: right;
+    margin-top: -36px;
+    margin-right: 12px;
+    /* this is so when you click on the chevron, your click actually goes on the dropdown menu */
+    pointer-events: none;
+    /* everything after this is just to cover up the original arrow */
+    /* (for browsers that don't support the syntax used above) */
+    background-color: #e1f8f6 !important;
+    padding-right: 5px;
+    z-index: 2;
+    position: relative;
+}
+
+.table {
+    border-collapse: separate;
+    border-spacing: 0 10px;
+    font-size: 18px;
+}
+
+.table-title {
+    border-collapse: separate;
+    border-spacing: 0;
+}
+
+.bg-green {
+    background-color: #58af9b;
+}
+
+.table-title .col .col {
+    background-color: #58af9b;
+    padding: 10px 20px;
+    border-radius: 8px;
+    color: white;
+}
+
+@media only screen and (max-width: 768px) {
+    .table-title .col .col {
+        padding: 4px 8px;
+    }
+
+    .arrow-right {
+        position: static;
+        transform: rotate(90deg);
+    }
+    .table-title {
+        background-color: #58af9b;
+        padding: 5px 10px;
+        border-radius: 8px;
+        margin: 0;
+    }
+}
+
+.table tbody tr {
+    border-radius: 8px !important;
+    background-color: #e1f8f6 !important;
+    padding: 10px 20px !important;
+}
+
+tr td:first-child {
+    border-top-left-radius: 10px;
+}
+tr td:last-child {
+    border-top-right-radius: 10px;
+}
+
+tr td:first-child {
+    border-bottom-left-radius: 10px;
+}
+tr td:last-child {
+    border-bottom-right-radius: 10px;
+}
+
+td {
+    border: 0 !important;
+    padding: 10px 20px !important;
+    width: 33% !important;
+}
+
+/* * {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+}
+
+h1 {
+    font-family: SF Compact !important;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+    width: 100%;
+}
+
+.left {
+    background-color: grey;
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.right {
+    background-color: #ffffff;
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.user-info h1 {
+    color: #58af9b;
+    font-weight: 457;
+    font-size: 44.74px;
+    line-height: 44.74px;
+}
+.user-info p {
+    color: #4b4f4e;
+    font-weight: 457;
+    font-size: 18px;
+    line-height: 44.74px;
+}
+
+.user-info {
+    text-align: center;
+}
+
+.info {
+    text-align: center;
+}
+.info h1 {
+    color: #0f6048;
+    font-weight: 457;
+    font-size: 44.74px;
+    line-height: 44.74px;
+}
+.info p {
+    color: #ffffff;
+    font-weight: 457;
+    font-size: 28px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form input,
+.form select {
+    color: #4b4f4e;
+    width: 327px;
+    height: 54px;
+    background-color: #e1f8f6;
+    border: none;
+    font-weight: 457;
+    font-size: 18px;
+    line-height: 44.74px;
+    padding-left: 25px;
+    margin-top: 27px;
+}
+
+#country,
+#submit {
+    width: 100%;
+} */
