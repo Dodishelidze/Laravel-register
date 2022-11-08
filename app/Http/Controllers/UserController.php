@@ -32,8 +32,9 @@ class UserController extends Controller
 
         //user manualy login for verify email
         Auth::login($user);
+        event(new Registered($user));
 
-        $user->sendEmailVerificationNotification();
+
         return redirect("/users");
     }
 }
